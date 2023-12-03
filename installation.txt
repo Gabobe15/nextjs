@@ -1,0 +1,4 @@
+next js
+npx create-next-app@latest -- installing latest version 
+downgrading  from 14 - 13
+npm install next@13.4

@@ -1,0 +1,13 @@
+do not use anchor to link to webpage 
+<a href="/users" > Users</a>
+instead use Link in next js
+<Link href="/users">Users </Link>
+
+app director in  nextjs is server by default if you want to convert server page into client page add "use client"; in the top 
+in server component we cannot use:
+click event.
+useHooks.
+
+caching in next
+  const res = await fetch("https://jsonplaceholder.typicode.com/users", { next: { revalidate: 10 }}) -- in second argument refress after every ten second
+  const res = await fetch("https://jsonplaceholder.typicode.com/users", { cache:  "no-store" }) -- in second argument does not store in case we have new data every time.
